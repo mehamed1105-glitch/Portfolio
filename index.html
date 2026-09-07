@@ -1,70 +1,146 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portfolio de EL ABDELLAOUI M'HAMED — Développeur Web & Étudiant en Ingénierie des Systèmes d'Information à Marrakech."/>
   <title>EL ABDELLAOUI  M'HAMED — Portfolio</title>
-  <link rel="stylesheet" href="style_home.css"/>
+  <link rel="stylesheet" href="styletest.css"/>
 </head>
 <body>
+<!-- ambient background -->
+  <div class="bg-field" aria-hidden="true">
+    <svg class="bg-net" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+      <g class="bg-net__lines">
+        <path d="M40,120 L380,260 L720,140 L1040,320 L1400,180" />
+        <path d="M0,500 L320,420 L640,560 L980,460 L1340,600 L1600,500" />
+        <path d="M120,760 L460,660 L840,780 L1200,700 L1560,800" />
+      </g>
+      <g class="bg-net__nodes">
+        <circle cx="40" cy="120" r="3"/><circle cx="380" cy="260" r="3"/><circle cx="720" cy="140" r="3"/>
+        <circle cx="1040" cy="320" r="3"/><circle cx="1400" cy="180" r="3"/>
+        <circle cx="320" cy="420" r="3"/><circle cx="640" cy="560" r="3"/><circle cx="980" cy="460" r="3"/>
+        <circle cx="1340" cy="600" r="3"/><circle cx="460" cy="660" r="3"/><circle cx="840" cy="780" r="3"/>
+        <circle cx="1200" cy="700" r="3"/>
+      </g>
+      <circle class="bg-net__packet" r="4"><animateMotion dur="7s" repeatCount="indefinite" path="M40,120 L380,260 L720,140 L1040,320 L1400,180" /></circle>
+      <circle class="bg-net__packet bg-net__packet--2" r="4"><animateMotion dur="9s" repeatCount="indefinite" path="M0,500 L320,420 L640,560 L980,460 L1340,600 L1600,500" /></circle>
+    </svg>
+  </div>
 
   <!-- ══════════════════════════════════════
        NAVIGATION
   ══════════════════════════════════════ -->
   <nav class="nav">
-    <a href="#hero" class="nav__logo">M'HAMED EL ABDELLAOUI.</a>
-    <ul class="nav__links">
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#education">Formation</a></li>
-      <li><a href="#contact" class="nav__cta">Contact</a></li>
+
+    <a href="#hero" class="nav__logo">M'HAMED</a>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#education" class="nav_style">Formation</a></li>
+      <li><a href="#projects" class="nav_style">Projets</a></li>
+      <li><a href="#skills" class="nav_style">Compétences</a></li>
+      <li><a href="#contact" class="nav__cta nav_style">Contact</a></li>
     </ul>
+
   </nav>
+  
+  <!-- ══════════ HERO ══════════ -->
+    <section id="hero" class="hero section">
+      <div class="hero__text reveal">
+        <span class="badge">
+          <span class="badge__dot"></span>
+          Available for opportunities
+        </span>
 
-  <section id="hero" class="hero">
+        <h1 class="hero__title">
+          Bonjour, je suis<br/>
+          <span class="hero__name">M'hamed El Abdellaoui</span>
+        </h1>
 
-    <div class="hero__content">
-      <img class="nav_cv" src="CV.png" alt="EL ABDELLAOUI M'HAMED" >
-      <div class="info">
-        <h3 class="name">EL ABDELLAOUI M'HAMED</h3>
-        <p class="hero__role">
-          Étudiant en Ingénierie des Systèmes d'Information · Marrakech
-        </p>
+        <p class="hero__role">Étudiant en informatique &amp; Développeur Web — Marrakech</p>
+
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__path">mhamed1105@gmail.com</span>
+          </div>
+
+          <div class="terminal__body">
+            <span class="terminal__prompt">$</span>
+            <span class="terminal__typed" id="terminalTyped"></span>
+            <span class="terminal__cursor"></span>
+          </div>
+        </div>
+
         <p class="hero__bio">
-          2ème année à la Faculté des Sciences Semlalia, passionné par la création
-          d'applications web modernes. Maîtrisant HTML, CSS, JavaScript et
-          spécialisé en React. Je cherche à mettre mes compétences au service
-          d'une équipe pour relever des défis concrets.
+          Étudiant en 2ᵉ année de Licence — Ingénierie des Systèmes d'Information à la
+          Faculté des Sciences Semlalia. Je conçois des <span class="accent-text">expériences web modernes</span>,
+          performantes et intuitives, avec un socle solide en programmation système, réseaux
+          et sécurité informatique.
         </p>
-      </div>
-    </div>
-    
-  </section>
 
- <!-- ══════════════════════════════════════
-       STATS BAR
-  ══════════════════════════════════════ -->
-  <div style="padding: 0 5vw 4rem;">
-    <div class="stats-bar reveal">
-      <div class="stat-item">
-        <div class="stat-value">5+</div>
-        <div class="stat-label">Langages</div>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--ghost">Voir mes projets</a>
+          <a href="#contact" class="btn btn--ghost">Me contacter</a>
+        </div>
+        <a href="Cv professionnel .pdf" download class="hero__cv-link">
+          <span aria-hidden="true">↓</span> Télécharger mon CV
+        </a>
       </div>
-      <div class="stat-item">
-        <div class="stat-value">5</div>
-        <div class="stat-label">Langues parlées</div>
+
+      <div class="hero__visual reveal reveal--delay-2">
+        <div class="hero__frame">
+          <img src="CV.png" alt="Photo de EL ABDELLAOUI M'HAMED" class="hero__photo" />
+          <span class="chip chip--html" style="--x:-18%; --y:6%;">HTML</span>
+          <span class="chip chip--css" style="--x:88%; --y:2%;">CSS</span>
+          <span class="chip chip--js" style="--x:92%; --y:52%;">JavaScript</span>
+          <span class="chip chip--C" style="--x:-22%; --y:60%;">C</span>
+          <span class="chip chip--cpp" style="--x:6%; --y:96%;">C++</span>
+          <span class="chip chip--py" style="--x:70%; --y:98%;">Python</span>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-value">2ème</div>
-        <div class="stat-label">Année de Licence</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-value">1</div>
-        <div class="stat-label">Projet </div>
-      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+        STATS BAR
+    ══════════════════════════════════════ -->
+
+    <div style="padding: 0 5vw 4rem;">
+        <div class="stats-bar" id="statsBar">
+
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="counter" data-count="5">0</span>+
+                </div>
+                <div class="stat-label">Langages</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="counter" data-count="5">0</span>
+                </div>
+                <div class="stat-label">Langues parlées</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="counter" data-count="2">0</span><sup>ème</sup>
+                </div>
+                <div class="stat-label">Année de Licence</div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-value">
+                    <span class="counter" data-count="1">0</span>
+                </div>
+                <div class="stat-label">Projet</div>
+            </div>
+
+        </div>
     </div>
-  </div>
    <!-- ══════════════════════════════════════
        FORMATION
   ══════════════════════════════════════ -->
@@ -87,13 +163,29 @@
         <div class="timeline__item reveal licence">
           <div class="timeline__dot">🎓</div>
           <div class="timeline__body">
-            <p class="timeline__year">2023 — Présent</p>
-            <p class="timeline__degree">Licence — Ingénierie des Systèmes d'Information</p>
+            <p class="timeline__year">2023 — 2024</p>
+            <p class="timeline__degree">1er annee Licence — Maths informatique physique</p>
             <p class="timeline__school">Faculté des Sciences Semlalia · Marrakech</p>
           </div>
         </div>
 
-        
+        <div class="timeline__item reveal licence">
+          <div class="timeline__dot">🎓</div>
+          <div class="timeline__body">
+            <p class="timeline__year">2024 — 2026</p>
+            <p class="timeline__degree">Deug — Tronc commun Informatique applique</p>
+            <p class="timeline__school">Faculté des Sciences Semlalia · Marrakech</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal licence">
+          <div class="timeline__dot">🎓</div>
+          <div class="timeline__body">
+            <p class="timeline__year">2026 — present</p>
+            <p class="timeline__degree">licence —  Informatique applique</p>
+            <p class="timeline__school">Faculté des Sciences Semlalia · Marrakech</p>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -106,47 +198,50 @@
     <p class="section__label reveal">Expérience</p>
     <h2 class="section__title reveal">Projets</h2>
     <div class="projet1">
-      <h3>1 - 🏃 Trail Dades & kech</h3>
-      <h6>Jeu vidéo 2D développé avec C++ et SFML</h6>
-      <p class="section__subtitle reveal">
-        Un jeu développé de A à Z en C++, démontrant la maîtrise des systèmes et de la logique de programmation.
-      </p>
+      <div class="projet1__content">
+        <h4 class="projet1__text">1 - 🏃 Trail Dades & kech</h4>
+        <h6 class="projet1__text">Jeu vidéo 2D développé avec C++ et SFML</h6>
+        <p class="section__subtitle reveal projet1__text">
+          Un jeu développé de A à Z en C++, démontrant la maîtrise des systèmes et de la logique de programmation.
+        </p>
 
-      <div class="project-card reveal">
+        <div class="project-card reveal">
 
-        <div>
-          <span class="project__badge">2026 · Faculté Semlalia</span>
-          <h3 class="project__title">Infinite Runner</h3>
-          <p class="project__desc">
-            Jeu de plateforme 2D narratif mettant en scène un jeune protagoniste
-            marocain — conçu et développé entièrement avec C++ et la bibliothèque SFML.
-          </p>
-          <ul class="project__bullets">
-            <li>Moteur de physique personnalisé : gravité, sauts et collisions entre entités</li>
-            <li>Frame-rate independence pour une fluidité constante du mouvement et du score</li>
-            <li>Intégration de sprite sheets animées et gestion dynamique des obstacles</li>
-            <li>Système de collecte de pièces et de score en temps réel</li>
-          </ul>
-          <div class="tech-stack">
-            <span class="tech">C++</span>
-            <span class="tech">SFML</span>
-            <span class="tech">Physics Engine</span>
-            <span class="tech">Sprite Animation</span>
-            <span class="tech">Game Loop</span>
+          <div >
+            <span class="project__badge projet1__text">2026 · Faculté Semlalia</span>
+            <h3 class="project__title projet1__text">Infinite Runner</h3>
+            <p class="project__desc projet1__text">
+              Jeu de plateforme 2D narratif mettant en scène un jeune protagoniste
+              marocain — conçu et développé entièrement avec C++ et la bibliothèque SFML.
+            </p>
+            <ul class="project__bullets projet1__text">
+              <li>Moteur de physique personnalisé : gravité, sauts et collisions entre entités</li>
+              <li>Frame-rate independence pour une fluidité constante du mouvement et du score</li>
+              <li>Intégration de sprite sheets animées et gestion dynamique des obstacles</li>
+              <li>Système de collecte de pièces et de score en temps réel</li>
+            </ul>
+            <div class="tech-stack projet1__text">
+              <span class="tech">C++</span>
+              <span class="tech">SFML</span>
+              <span class="tech">Physics Engine</span>
+              <span class="tech">Sprite Animation</span>
+              <span class="tech">Game Loop</span>
+            </div>
           </div>
+
+
+
+          
+          <!--<div class="project__visual">
+            <video width="640" height="360" controls poster="icon.png">
+              <source src="cpp.mp4" type="video/mp4">
+            </video>
+            <div class="project__ground"></div>
+          </div>-->
+
         </div>
-
-
-
-        
-        <div class="project__visual">
-          <video width="640" height="360" controls poster="icon.png">
-            <source src="cpp.mp4" type="video/mp4">
-          </video>
-          <div class="project__ground"></div>
-        </div>
-
       </div>
+      
     </div>
     
   </section>
@@ -231,55 +326,62 @@
   <!-- ══════════════════════════════════════
        LANGUES
   ══════════════════════════════════════ -->
-  <section class="section">
+  <section id="languages" class="section">
     <p class="section__label reveal">Communication</p>
     <h2 class="section__title reveal">Langues</h2>
 
     <div class="languages-grid">
-
       <div class="lang-card reveal">
+        <svg class="lang-ring" viewBox="0 0 120 120" data-percent="80">
+          <circle class="lang-ring__bg" cx="60" cy="60" r="52"/>
+          <circle class="lang-ring__fill" cx="60" cy="60" r="52"/>
+          <text x="60" y="66" class="lang-ring__text">80%</text>
+        </svg>
         <p class="lang-card__name">Arabe</p>
-        <div class="bar_div ar"></div>
-        <div class="lang-card__bar">
-          <div class="lang-card__fill" data-width="80%"></div>
-        </div>
+        <p class="lang-card__level">Langue maternelle</p>
       </div>
 
       <div class="lang-card reveal reveal--delay-1">
+        <svg class="lang-ring" viewBox="0 0 120 120" data-percent="90">
+          <circle class="lang-ring__bg" cx="60" cy="60" r="52"/>
+          <circle class="lang-ring__fill" cx="60" cy="60" r="52"/>
+          <text x="60" y="66" class="lang-ring__text">90%</text>
+        </svg>
         <p class="lang-card__name">Tamazight</p>
-        <div class="bar_div tm"></div>
-        <div class="lang-card__bar">
-          <div class="lang-card__fill" data-width="90%"></div>
-        </div>
+        <p class="lang-card__level">Langue maternelle</p>
       </div>
 
       <div class="lang-card reveal reveal--delay-2">
+        <svg class="lang-ring" viewBox="0 0 120 120" data-percent="70">
+          <circle class="lang-ring__bg" cx="60" cy="60" r="52"/>
+          <circle class="lang-ring__fill" cx="60" cy="60" r="52"/>
+          <text x="60" y="66" class="lang-ring__text">70%</text>
+        </svg>
         <p class="lang-card__name">Français</p>
-        <div class="bar_div fr"></div>
-        <div class="lang-card__bar">
-          <div class="lang-card__fill" data-width="70%"></div>
-        </div>
+        <p class="lang-card__level">Courant</p>
       </div>
 
       <div class="lang-card reveal reveal--delay-3">
+        <svg class="lang-ring" viewBox="0 0 120 120" data-percent="50">
+          <circle class="lang-ring__bg" cx="60" cy="60" r="52"/>
+          <circle class="lang-ring__fill" cx="60" cy="60" r="52"/>
+          <text x="60" y="66" class="lang-ring__text">50%</text>
+        </svg>
         <p class="lang-card__name">Anglais</p>
-        <div class="bar_div an"></div>
-        <div class="lang-card__bar">
-          <div class="lang-card__fill" data-width="50%"></div>
-        </div>
+        <p class="lang-card__level">Intermédiaire</p>
       </div>
 
       <div class="lang-card reveal">
+        <svg class="lang-ring" viewBox="0 0 120 120" data-percent="25">
+          <circle class="lang-ring__bg" cx="60" cy="60" r="52"/>
+          <circle class="lang-ring__fill" cx="60" cy="60" r="52"/>
+          <text x="60" y="66" class="lang-ring__text">25%</text>
+        </svg>
         <p class="lang-card__name">Allemand</p>
-        <div class="bar_div al"></div>
-        <div class="lang-card__bar">
-          <div class="lang-card__fill" data-width="25%"></div>
-        </div>
+        <p class="lang-card__level">Débutant</p>
       </div>
-
     </div>
   </section>
-
   <!-- ══════════════════════════════════════
        CONTACT
   ══════════════════════════════════════ -->
@@ -346,6 +448,8 @@
        JAVASCRIPT
   ══════════════════════════════════════ -->
   <script>
+    
+    
     /* ── Scroll Reveal ── */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -357,22 +461,51 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    /* ── Language bar fill on reveal ── */
+    /* ── Language circles animation ── */
+
     const langObserver = new IntersectionObserver((entries) => {
+
       entries.forEach(entry => {
+
         if (entry.isIntersecting) {
-          const fill = entry.target.querySelector('.lang-card__fill');
-          if (fill) {
-            const target = fill.getAttribute('data-width');
-            fill.style.width = '0%';
-            setTimeout(() => { fill.style.width = target; }, 200);
-          }
+
+          const ring = entry.target.querySelector('.lang-ring');
+          const fill = entry.target.querySelector('.lang-ring__fill');
+
+          if (!ring || !fill) return;
+
+          const percent = Number(ring.dataset.percent);
+
+          const radius = 52;
+          const circumference = 2 * Math.PI * radius;
+
+          // Configuration du cercle
+          fill.style.strokeDasharray = circumference;
+          fill.style.strokeDashoffset = circumference;
+
+          // Animation vers le pourcentage
+          setTimeout(() => {
+
+            const offset =
+              circumference - (percent / 100) * circumference;
+
+            fill.style.strokeDashoffset = offset;
+
+          }, 200);
+
+          // Ne déclenche qu'une seule fois
+          langObserver.unobserve(entry.target);
         }
+
       });
-    }, { threshold: 0.3 });
 
-    document.querySelectorAll('.lang-card').forEach(el => langObserver.observe(el));
+    }, {
+      threshold: 0.3
+    });
 
+    document.querySelectorAll('.lang-card').forEach(card => {
+      langObserver.observe(card);
+    });
     /* ── Active nav link on scroll ── */
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav__links a');
@@ -391,6 +524,135 @@
     }, { threshold: 0.5 });
 
     sections.forEach(s => navObserver.observe(s));
+
+
+    // ================================
+    // TERMINAL TYPING ANIMATION
+    // ================================
+
+    const terminalTyped = document.getElementById("terminalTyped");
+
+    const terminalMessages = [
+        "Bonjour, je suis M'hamed",
+        "Étudiant en informatique Appliquée",
+        "Développeur Web",
+        "Passionné par la programmation",
+        "Disponible pour des opportunités"
+    ];
+
+    let messageIndex = 0;
+    let characterIndex = 0;
+    let isDeleting = false;
+
+    function terminalType() {
+
+        const message = terminalMessages[messageIndex];
+
+        if (!isDeleting) {
+
+            terminalTyped.textContent =
+                message.substring(0, characterIndex + 1);
+
+            characterIndex++;
+
+            if (characterIndex === message.length) {
+
+                // attendre avant de supprimer
+                setTimeout(() => {
+                    isDeleting = true;
+                    terminalType();
+                }, 2000);
+
+                return;
+            }
+
+            setTimeout(terminalType, 70);
+
+        } else {
+
+            terminalTyped.textContent =
+                message.substring(0, characterIndex - 1);
+
+            characterIndex--;
+
+            if (characterIndex === 0) {
+
+                isDeleting = false;
+
+                messageIndex++;
+
+                if (messageIndex >= terminalMessages.length) {
+                    messageIndex = 0;
+                }
+
+                setTimeout(terminalType, 500);
+
+                return;
+            }
+
+            setTimeout(terminalType, 40);
+        }
+    }
+
+    terminalType();
+
+
+    // ========================================
+    // STATS BAR - COUNTER ANIMATION
+    // ========================================
+
+    const statsBar = document.getElementById("statsBar");
+    const counters = document.querySelectorAll(".counter");
+
+    let statsStarted = false;
+
+    const statsObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting && !statsStarted) {
+
+                statsStarted = true;
+
+                counters.forEach(counter => {
+
+                    const target = Number(counter.dataset.count);
+                    let current = 0;
+
+                    const duration = 1500;
+                    const startTime = performance.now();
+
+                    function updateCounter(currentTime) {
+
+                        const progress = Math.min(
+                            (currentTime - startTime) / duration,
+                            1
+                        );
+
+                        // Animation fluide
+                        const value = Math.floor(progress * target);
+
+                        counter.textContent = value;
+
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.textContent = target;
+                        }
+                    }
+
+                    requestAnimationFrame(updateCounter);
+                });
+            }
+
+        });
+
+    }, {
+        threshold: 0.4
+    });
+
+    statsObserver.observe(statsBar);
+    
   </script>
 
 </body>
