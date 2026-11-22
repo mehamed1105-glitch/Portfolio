@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portfolio de EL ABDELLAOUI M'HAMED — Développeur Web & Étudiant en Ingénierie des Systèmes d'Information à Marrakech."/>
   <title>EL ABDELLAOUI  M'HAMED — Portfolio</title>
+  <link rel="icon" type="image/png" href="MA Developer Logo.png">
   <link rel="stylesheet" href="style_home.css"/>
 </head>
 <body>
@@ -33,7 +34,6 @@
        NAVIGATION
   ══════════════════════════════════════ -->
   <nav class="nav">
-
     <a href="#hero" class="nav__logo">M'HAMED</a>
 
     <ul class="nav__links" id="navLinks">
@@ -76,7 +76,7 @@
         </div>
 
         <p class="hero__bio">
-          Étudiant en 2ᵉ année de Licence — Ingénierie des Systèmes d'Information à la
+          Étudiant en 3ᵉ année de Licence — Ingénierie des Systèmes d'Informatique à la
           Faculté des Sciences Semlalia. Je conçois des <span class="accent-text">expériences web modernes</span>,
           performantes et intuitives, avec un socle solide en programmation système, réseaux
           et sécurité informatique.
@@ -94,12 +94,15 @@
       <div class="hero__visual reveal reveal--delay-2">
         <div class="hero__frame">
           <img src="CV.png" alt="Photo de EL ABDELLAOUI M'HAMED" class="hero__photo" />
-          <span class="chip chip--html" style="--x:-18%; --y:6%;">HTML</span>
-          <span class="chip chip--css" style="--x:88%; --y:2%;">CSS</span>
+          <span class="chip chip--html" style="--x:40%; --y:6%;">HTML</span>
+          <span class="chip chip--css" style="--x:70%; --y:8%;">CSS</span>
           <span class="chip chip--js" style="--x:92%; --y:52%;">JavaScript</span>
-          <span class="chip chip--C" style="--x:-22%; --y:60%;">C</span>
+          <span class="chip chip--C" style="--x:10%; --y:60%;">C</span>
           <span class="chip chip--cpp" style="--x:6%; --y:96%;">C++</span>
           <span class="chip chip--py" style="--x:70%; --y:98%;">Python</span>
+          <span class="chip chip--py" style="--x:97%; --y:80%;">Java</span>
+          <span class="chip chip--py" style="--x:15%; --y:30%;">SQL</span>
+          <span class="chip chip--py" style="--x:90%; --y:30%;">PHP</span>
         </div>
       </div>
     </section>
@@ -127,7 +130,7 @@
 
             <div class="stat-item">
                 <div class="stat-value">
-                    <span class="counter" data-count="2">0</span><sup>ème</sup>
+                    <span class="counter" data-count="3">0</span><sup>ème</sup>
                 </div>
                 <div class="stat-label">Année de Licence</div>
             </div>
@@ -144,7 +147,7 @@
    <!-- ══════════════════════════════════════
        FORMATION
   ══════════════════════════════════════ -->
-  <section id="education" class="section">
+  <section id="education" class=" section-generale">
     <div class="education">
       <p class="section__label reveal">Parcours académique</p>
       <h2 class="section__title reveal">Formation</h2>
@@ -194,7 +197,7 @@
    <!-- ══════════════════════════════════════
        projet
   ══════════════════════════════════════ -->
-  <section id="projects" class="section section--alt">
+  <section id="projects" class=" section--alt section-generale">
     <p class="section__label reveal">Expérience</p>
     <h2 class="section__title reveal">Projets</h2>
     <div class="projet1">
@@ -236,20 +239,17 @@
     
   </section>
 
-  <section id="skills" class="section section--alt">
+  <section id="skills" class=" section--alt section-generale">
     <p class="section__label reveal">Ce que je maîtrise</p>
     <h2 class="section__title reveal">Compétences</h2>
-    <p class="section__subtitle reveal">
-      Un socle technique couvrant le développement web, la sécurité informatique
-      et la programmation système.
-    </p>
+
 
     <div class="skills-grid">
 
       <div class="skill-card reveal reveal--delay-1">
-        <div class="skill-card__icon">🌐</div>
-        <p class="skill-card__category">Front-End Web</p>
+        <img class="skill-img" src="Frontend_Development.png" alt="Frontend programmation">
         <div class="skill-card__tags">
+          <h3>Front-end Developpement </h3>
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">JavaScript</span>
@@ -258,9 +258,9 @@
       </div>
 
       <div class="skill-card reveal reveal--delay-2">
-        <div class="skill-card__icon">⚙️</div>
-        <p class="skill-card__category">Langages</p>
+        <img class="skill-img" src="Backend_Development.png" alt="Backend programmation">
         <div class="skill-card__tags">
+          <h3>Back-end Developpement </h3>
           <span class="tag">C</span>
           <span class="tag">C++</span>
           <span class="tag">Python</span>
@@ -269,9 +269,9 @@
       </div>
 
       <div class="skill-card reveal reveal--delay-3">
-        <div class="skill-card__icon">🔐</div>
-        <p class="skill-card__category">Sécurité</p>
+        <img class="skill-img" src="Securite_informatique.png" alt="Securite informatique">
         <div class="skill-card__tags">
+          <h3>Sécurité informatique  </h3>
           <span class="tag">Cryptographie</span>
           <span class="tag">Sécurité Web</span>
           <span class="tag">Sécurité des Réseaux</span>
@@ -280,9 +280,9 @@
       </div>
 
       <div class="skill-card reveal reveal--delay-1">
-        <div class="skill-card__icon">🖧</div>
-        <p class="skill-card__category">Réseaux</p>
+        <img class="skill-img" src="Réseaux_informatiques .png" alt="Resaux informatique">
         <div class="skill-card__tags">
+          <h3>Reseaux informatique </h3>
           <span class="tag">Cisco</span>
           <span class="tag">Switching &amp; Routing</span>
           <span class="tag">DNS / DHCP</span>
@@ -290,9 +290,10 @@
       </div>
 
       <div class="skill-card reveal reveal--delay-2">
-        <div class="skill-card__icon">🗄️</div>
-        <p class="skill-card__category">Programmation</p>
+        <img class="skill-img" src="Programmation_Projets.png" alt="Programmation des projet ">
+
         <div class="skill-card__tags">
+          <h3>Programmation des projets </h3>
           <span class="tag">POO</span>
           <span class="tag">UML</span>
           <span class="tag">Bases de données</span>
@@ -300,9 +301,9 @@
       </div>
 
       <div class="skill-card reveal reveal--delay-3">
-        <div class="skill-card__icon">📊</div>
-        <p class="skill-card__category">Microsoft Office</p>
+        <img class="skill-img" src="Microsoft_Office.png" alt="Programmation des projet ">
         <div class="skill-card__tags">
+          <h3>Microsoft Office</h3>
           <span class="tag">Excel</span>
           <span class="tag">Word</span>
           <span class="tag">PowerPoint</span>
@@ -316,7 +317,7 @@
   <!-- ══════════════════════════════════════
        LANGUES
   ══════════════════════════════════════ -->
-  <section id="languages" class="section">
+  <section id="languages" class=" section-generale">
     <p class="section__label reveal">Communication</p>
     <h2 class="section__title reveal">Langues</h2>
 
@@ -375,7 +376,7 @@
   <!-- ══════════════════════════════════════
        CONTACT
   ══════════════════════════════════════ -->
-  <section id="contact" class="section contact-section">
+  <section id="contact" class=" contact-section section-generale">
     <div class="contact-grid">
 
       <div class="contact__text">
